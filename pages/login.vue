@@ -1,9 +1,10 @@
 <script lang='ts' setup>
 import { Icon } from '@iconify/vue'
+import { githubLoginUri } from '~/constants'
 
 const { public: { state, scope, client_id, client_secret, redirect_uri } } = useRuntimeConfig()
 
-const uri = `https://github.com/login/oauth/authorize?${new URLSearchParams({
+const uri = `${githubLoginUri}?${new URLSearchParams({
   state,
   scope,
   client_id,

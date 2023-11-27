@@ -1,2 +1,3 @@
-export const appName = 'Vitesse for Nuxt 3'
-export const appDescription = 'Vitesse for Nuxt 3'
+export const appName = 'Picx Authorization'
+export const appDescription = 'Picx Authorization'
+export const githubLoginUri = 'https://github.com/login/oauth/authorize'
