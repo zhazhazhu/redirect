@@ -1,0 +1,39 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+svg {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+html {
+  background: white;
+  color: #333;
+
+  --tabbar-background: linear-gradient(120deg, #49c7fc, #9369f8, #c05cf8);
+  --tabbar-item-color: #492891;
+  --tabbar-item-color-active: #ffffff;
+  --base-color: #210f49;
+  --base-color-light-3: #2d1c52;
+  --base-color-light-5: #33274e;
+  --base-color-light-7: #3a324d;
+  --base-color-light-9: #524c5f;
+}

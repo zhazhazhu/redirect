@@ -1,3 +1,4 @@
+import process from 'node:process'
 import { pwa } from './config/pwa'
 import { appDescription } from './constants/index'
 
@@ -8,7 +9,18 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@nuxtjs/color-mode',
     '@vite-pwa/nuxt',
+    '@nuxt/ui',
   ],
+
+  runtimeConfig: {
+    client_id: process.env.CLIENT_ID,
+    client_secret: process.env.CLIENT_SECRET,
+    redirect_uri: process.env.REDIRECT_URI,
+  },
+
+  devServer: {
+    port: 8110,
+  },
 
   experimental: {
     // when using generate, payload js assets included in sw precache manifest
