@@ -6,7 +6,7 @@
       <div class="mb-30px w-full flex flex-col items-center">
         <img src="/login.png" width="300">
         <div
-          class="base-text-color my-4px text-2rem font-bold lh-38px text-green-500 dark:text-green-400"
+          class="base-text-color my-20px text-2rem font-bold lh-38px text-green-500 dark:text-green-400"
         >
           Welcome to Picx
         </div>

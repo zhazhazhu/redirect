@@ -16,7 +16,7 @@ export default defineEventHandler(async (event) => {
   const query = getQuery(event)
   if (!query.code)
     return
-  const { client_id, client_secret, redirect_uri } = useRuntimeConfig(event)
+  const { public: { client_id, client_secret, redirect_uri } } = useRuntimeConfig(event)
   const config = await $fetch(BASE_AUTHORIZE, { method: 'POST', headers: {
     Accept: 'application/json',
   }, params: {
