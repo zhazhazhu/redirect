@@ -18,16 +18,23 @@ onMounted(() => {
 </script>
 
 <template>
-  <div h-100vh>
-    <div class="pt-50px text-center">
-      <div class="mb-30px w-full flex flex-col items-center">
-        <Icon icon="mdi:github" class="text-8rem" />
-        <div
-          class="base-text-color my-20px text-2rem font-bold lh-38px text-green-500 dark:text-green-400"
-        >
-          Login with Github loading...
+  <div>
+    <div class="items" b-b="1px solid gray-7">
+      <!-- <Icon icon="fluent-emoji:carrot" class="text-4rem" /> -->
+      <div class="text-3rem font-bold">
+        Picx
+      </div>
+    </div>
+    <div class="items flex-col">
+      <div class="text-2rem font-500">
+        正在连接 GITHUB
+      </div>
+      <Icon icon="eos-icons:three-dots-loading" class="text-4rem" />
+      <div class="mt-10px flex items-center">
+        <Icon icon="gravity-ui:circle-check" class="mr-6px text-1.4rem color-green" />
+        <div class="text-.9rem">
+          Spotify for Desktop
         </div>
-        <p class="my-0 color-gray" />
       </div>
     </div>
   </div>

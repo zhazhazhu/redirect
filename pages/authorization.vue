@@ -31,22 +31,32 @@ onMounted(async () => {
 </script>
 
 <template>
-  <div class="flex flex-col items-center pt-60px">
-    <Icon icon="icon-park-solid:success" class="text-5rem text-green-500 dark:text-green-400" />
-    <div class="mt-20px text-center">
-      <template v-if="code">
-        <div class="text-1.5rem color-white">
-          GitHub authorization authentication successful
+  <div>
+    <div class="items" b-b="1px solid gray-7">
+      <div class="text-3rem font-bold">
+        Picx
+      </div>
+    </div>
+
+    <div class="items flex-col">
+      <div v-if="code" class="flex items-center color-green">
+        <Icon icon="gravity-ui:circle-check" class="my-10px mr-6px text-3rem" />
+        <div class="text-2rem font-500">
+          GITHUB 授权身份验证成功
         </div>
-        <div class="text-1rem color-gray-4">
-          about to open the app
+      </div>
+      <div v-else class="flex items-center color-red">
+        <Icon icon="gravity-ui:circle-xmark" class="my-10px mr-6px text-3rem" />
+        <div class="text-2rem font-500">
+          GITHUB 授权身份验证失败
         </div>
-      </template>
-      <template v-else>
-        <div class="text-1.5rem color-gray-6">
-          GitHub authorization authentication
+      </div>
+      <div class="mt-10px flex items-center">
+        <Icon icon="gravity-ui:circle-check" class="mr-6px text-1.4rem color-green" />
+        <div class="text-.9rem">
+          Spotify for Desktop
         </div>
-      </template>
+      </div>
     </div>
   </div>
 </template>

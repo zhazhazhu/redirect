@@ -12,15 +12,15 @@ const error_uri = route.query.error_uri as string
   <div class="flex flex-col items-center pt-60px">
     <Icon icon="bxs:error" class="text-8rem color-red" />
     <template v-if="code_error">
-      <div class="color-gray-4">
+      <div>
         error: code is undefine
       </div>
     </template>
     <template v-else>
-      <div v-if="error" class="color-gray-4">
+      <div v-if="error">
         error: {{ error }}
       </div>
-      <div v-if="error_description" class="color-gray-4">
+      <div v-if="error_description">
         error_description: {{ error_description }}
       </div>
       <ULink
