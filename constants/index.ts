@@ -1,3 +1,2 @@
-export const appName = 'Picx Authorization'
-export const appDescription = 'Picx Authorization'
-export const githubLoginUri = 'https://github.com/login/oauth/authorize'
+export const appName = 'Redirect'
+export const appDescription = 'Redirect'

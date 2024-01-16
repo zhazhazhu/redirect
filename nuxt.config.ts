@@ -3,20 +3,14 @@ import { appDescription } from './constants/index'
 
 export default defineNuxtConfig({
   modules: [
-    '@vueuse/nuxt',
-    '@unocss/nuxt',
-    '@pinia/nuxt',
-    '@nuxtjs/color-mode',
     '@nuxt/ui',
+    '@unocss/nuxt',
+    '@nuxtjs/color-mode',
   ],
 
   runtimeConfig: {
     public: {
-      state: process.env.STATE,
-      scope: process.env.SCOPE,
-      client_id: process.env.CLIENT_ID,
-      client_secret: process.env.CLIENT_SECRET,
-      redirect_uri: process.env.REDIRECT_URI,
+      base: process.env.BASE,
     },
   },
 
@@ -25,7 +19,6 @@ export default defineNuxtConfig({
   },
 
   css: [
-    '~/assets/css/global.css',
     '@unocss/reset/tailwind.css',
   ],
 
